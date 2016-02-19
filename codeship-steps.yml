@@ -1,2 +1,4 @@
-- service: app
-  command: bundle exec ruby check.rb
+- type: parallel
+  steps:
+  - service: app
+    command: bundle exec ruby check.rb
